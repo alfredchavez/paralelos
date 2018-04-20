@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/achavez/Documents/University/Paralelos/Matrix.h
+cstdlib
+-
+iostream
+-
+random
+-
+
+/home/achavez/Documents/University/Paralelos/main.cpp
+iostream
+-
+Matrix.h
+/home/achavez/Documents/University/Paralelos/Matrix.h
+

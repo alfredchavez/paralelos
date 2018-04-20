@@ -73,7 +73,6 @@ public:
             return NULL;
         }
         auto ans = new Square_Matrix<T>(size_row, ZERO_INIT);
-        cout << "Post init" << endl;
         for(int jj=0;jj< this->size_row;jj+= block_size){
             for(int kk=0;kk< this->size_row;kk+= block_size){
                 for(int i=0;i< this->size_row;i++){

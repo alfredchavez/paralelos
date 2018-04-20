@@ -1,0 +1,3 @@
+/home/achavez/Documents/University/Paralelos/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/achavez/Documents/University/Paralelos/cmake-build-debug/CMakeFiles/Paralelos.dir
+/home/achavez/Documents/University/Paralelos/cmake-build-debug/CMakeFiles/edit_cache.dir
