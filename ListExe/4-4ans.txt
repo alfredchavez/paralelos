@@ -1,0 +1,16 @@
+las respuestas del 4.4
+a. Determine si el bucle externo del algoritmo orientado a filas se puede paralelizar
+
+El bucle externo del algoritmo orientado a filas no se puede paralelizar. Esto se debe a que el ciclo interno depende de x [col] donde col = row + 1.
+
+b. Determine si el bucle interno del algoritmo orientado a filas se puede paralelizar.
+
+El bucle interno del algoritmo orientado a filas se puede paralelizar. Esto se debe a que x [row] - x [n] ha sido asignado por el bucle externo de modo que x [col] (donde col = row + 1) no dependa de ninguno de los otros hilos.
+
+c. Determine si el (segundo) bucle externo del algoritmo orientado a columnas se puede paralelizar
+   
+El segundo bucle externo del algoritmo orientado a columnas se puede paralelizar. Como x [0..n] se ha establecido en el primer bucle externo, la única línea que tiene una variable dependiente es x [row] - = A [row] [col] * x [col] en el bucle interno. Sin embargo, dado que x [col] siempre está configurado por el mismo hilo, no es necesario que los hilos dependan el uno del otro.
+
+d. Determine si el bucle interno del algoritmo orientado a columnas se puede paralelizar.
+
+El bucle interno del algoritmo orientado a columnas también se puede paralelizar. Esto es por la misma razón por la que el segundo bucle externo del algoritmo orientado a columnas se puede paralelizar. x [col] es la única cosa de la que depende el bucle interno, y dado que x [0-n] ya están asignados en el primer bucle externo, el bucle interno debe ser paralelizable.
